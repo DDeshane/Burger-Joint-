@@ -9,6 +9,10 @@
            <div class="col-xs-9 text-center">
                <pre>{{this.id}}. {{this.burger_name}}</pre>
            </div> 
+
+    <br>
+    <br>
+    
         <div class="col-xs-3 text-center">
             <form method="POST" action="/burgers/update?_method+PUT"
             class="button-size">
@@ -22,6 +26,9 @@
         {{/each}}
         </div>
     </div>
+    
+    <br>
+    <br>
 
     <div class="col-xs-6 text-center" class="task">
         {{#each burger_data}}
@@ -29,10 +36,12 @@
                 <input class="form-control" type+"text" placeholder=
                 "{{this.id}}. {{this.burger_name}}" readonly>
                 {{/if}}
-                {{each}}
+                {{/each}}
              </div>
         </div>
     </div>
+    <br>
+    <br>
 
     <div class="container">
         <div class="row">
